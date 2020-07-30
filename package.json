@@ -13,10 +13,11 @@
   },
   "scripts": {
     "start": "npm run watch:css && react-scripts start",
-    "build": "npm run build:css && react-scripts build",
+    "build": "npm run build:css && npm run build:redirects && react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "build:css": "postcss src/styles/tailwind.css -o src/styles/main.css",
+    "build:redirects": "cp public/_redirects build/_redirects",
     "watch:css": "postcss src/styles/tailwind.css -o src/styles/main.css"
   },
   "eslintConfig": {
