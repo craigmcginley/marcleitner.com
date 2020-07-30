@@ -22,7 +22,7 @@ class Header extends Component {
 
   render() {
     return (
-      <nav class="fixed top-0 left-0 w-full flex items-center justify-between flex-wrap bg-teal-500 p-6">
+      <nav class="fixed top-0 left-0 w-full flex items-center justify-between flex-wrap bg-teal-500 p-6 z-10">
         <div class="flex items-center flex-shrink-0 text-white mr-6">
           <Link to="/" onClick={ this.close }>
             <span class="font-semibold text-xl tracking-tight">MarcLeitner.com</span>
